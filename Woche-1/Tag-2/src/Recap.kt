@@ -6,16 +6,18 @@ fun main() {
             Als Letztes wird eine Bestätigung ausgedruckt.
      */
 
-    // User abfragen
+    // Username abfragen
     println("Username: (bestätigen mit Enter)")
-    var username: String = readln()
+    var username = readln()
 
     // Passwort abfragen
     println("Password: ")
     val pw = readln()
 
     // Bestätigung
-    println("Ihr neuer Account wurde erstellt mit den folgenden Daten: \n Username: $username \n Passwort: $pw")
+    println("Ihr neuer Account wurde erstellt mit den folgenden Daten: ")
+    println(" Username: $username \n Passwort: $pw")
 
 }
+
 

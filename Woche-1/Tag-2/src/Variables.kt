@@ -3,8 +3,8 @@ fun main() {
     // var steht für Variable  (variable)
     // val steht für Konstante (value)
 
-    val minAlter: Int = 21
-//    mindestAlter = 18       // Fehler, Konstanten kann man nicht neu belegen
+    val minAlter: Int = 21          // Int = Integer
+//    minAlter = 18       // Fehler, Konstanten kann man nicht neu belegen
     println("Das Mindestalter ist $minAlter")
 
     var myAge: Int = 24
@@ -17,15 +17,28 @@ fun main() {
     println("Das Alter ist jetzt: $myAge")
 
     val geburtsJahr: Int = 2001    // Konstante
-    var alter = 2022 - geburtsJahr  // Variable
+    var alter: Int = 2024 - geburtsJahr  // Variable
+
+    println("Wenn ich $geburtsJahr geboren bin, bin ich jetzt $alter")
 
     var vorname1 : String = "Fabian"
     var vorname2 = "Niclas"
     var email: String = "Hallo94@GMAIL.COM"
 
+    var brief: String = """
+        Hallo ...,
+        
+            ich ...
+        
+            Liebe Grüße
+            Gordon ❤️❤️
+    """.trimIndent()
+
+    println(brief)
+
     // Fehler, wenn ich falschen Datentyp verwende
 //    email = 50
-//    age = "Hi"
+//    alter = "Hi"
 
 
     // Diese Var speichert, ob es regnet
