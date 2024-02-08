@@ -1,4 +1,5 @@
 import banking.*
+import kotlin.math.roundToInt
 
 fun main(){
     var kontostandInYen: Double = 45123.23
@@ -15,6 +16,9 @@ fun main(){
 
     kontostandInEuro = kontostandInEuro + einzahlung
     kontostandInYen += einzahlung * wechselKursEuroToYen
+
+    // Kontostand Runden:
+    kontostandInYen = (kontostandInYen * 100).roundToInt() / 100.0
 
     println("Ihr neuer Kontostand: $kontostandInEuro €")
     println("Ihr neuer Kontostand: $kontostandInYen ¥")
