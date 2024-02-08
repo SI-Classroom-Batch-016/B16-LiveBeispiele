@@ -3,14 +3,14 @@ fun main(){
     // Ziel: die Zahl runden (auf gewisse Kommastellen)
     var kontostand = 1326.56576879908
 
-
     // Alt:
-//    println("Ihr aktuelles Guthaben: $kontostand €")
+    println("Ihr aktuelles Guthaben: $kontostand €")
 
     // %.2f   -> kommazahl mit 2 nachkommastellen
     println("Ihr aktuelles Guthaben: %.2f €".format(kontostand))
 
-//    println("Der eigentliche Kontostand: $kontostand")
+
+    kontostand = "%,.2f".format(kontostand).replace(",",".").toDouble()
 
 
     val template: String = "Ihr aktuelles Guthaben: %.2f €"
