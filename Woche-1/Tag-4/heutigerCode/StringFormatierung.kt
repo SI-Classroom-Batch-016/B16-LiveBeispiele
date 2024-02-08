@@ -10,10 +10,10 @@ fun main(){
     println("Ihr aktuelles Guthaben: %.2f €".format(kontostand))
 
 
-    kontostand = "%,.2f".format(kontostand).replace(",",".").toDouble()
+    kontostand = "%.2f".format(kontostand).replace(",",".").toDouble()
 
 
-    val template: String = "Ihr aktuelles Guthaben: %.2f €"
+    val template: String = "Ihr aktuelles Guthaben: %,.2f €"
 
     var kontoStandGordon = 99999.99
     var kontoStandMarianne = -128.0
