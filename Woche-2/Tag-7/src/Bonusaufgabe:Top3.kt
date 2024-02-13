@@ -4,7 +4,7 @@ fun main(){
         TODO:
          Gegeben sind eine Liste von Spielern und Punktzahlen
          Die Indices der beiden Listen stehen für die selbe SpielerIn
-         Finde die 3 Spielerinnen mit den höchsten Punktzahlen,
+         Finde die 3 SpielerInnen mit den höchsten Punktzahlen,
          und geb sie auf der Konsole aus. (sowohl Name als auch Punkte)
      */
 
