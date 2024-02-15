@@ -11,6 +11,18 @@ fun main(){
         "Haribo Balla Balla" to 2.00
     )
 
+
+    // Günstigste Produkt finden:
+    val minPreis = automat.values.min()
+
+    // Variante 1: .indexOf
+    val indexVonMinPreis = automat.values.indexOf(minPreis)
+    val guenstigstesProdukt = automat.keys.elementAt(indexVonMinPreis)
+
+    // Variante 2:
+    val guenstigsteProdukte = automat.filter { it.value == minPreis}.keys
+    println(guenstigsteProdukte)
+
     val obstLaden: MutableMap<Int, String> = mutableMapOf(
         1 to "Apfel",
         2 to "Banane",
