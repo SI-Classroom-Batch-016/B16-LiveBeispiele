@@ -11,7 +11,6 @@ fun main(){
         "Haribo Balla Balla" to 2.00
     )
 
-
     // Günstigste Produkt finden:
     val minPreis = automat.values.min()
 
