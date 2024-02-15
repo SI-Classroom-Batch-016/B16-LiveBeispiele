@@ -28,7 +28,7 @@ fun main(){
      */
 
     // Spieler 1
-    val player1Name: String = "Vanessa die Berserkering"
+    val player1Name: String = "Vanessa die Berserkerin"
     var player1LP: Int = 65
     val player1Armor: Int? = null
     val player1Weapon1: IntRange? = (4..8)
