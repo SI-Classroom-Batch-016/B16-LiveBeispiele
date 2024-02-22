@@ -25,7 +25,7 @@ fun main() {
  * @param max Die obere Grenze des Bereichs (Standardmäßig 10).
  * @return Eine zufällige ganze Zahl im angegebenen Bereich.
  */
-fun zufallsZahl(min: Int = 0, max: Int = 10): Int{
+fun zufallsZahl(min: Int = 0, max: Int = 10): Int {
     return (min..max).random()
 }
 
@@ -34,6 +34,6 @@ fun zufallsZahl(min: Int = 0, max: Int = 10): Int{
  *
  * @return Eine zufällige ganze Zahl zw. 0 und 100.
  */
-fun zufallsZahl(): Int{
+fun zufallsZahl(): Int {
     return (0..100).random()
 }

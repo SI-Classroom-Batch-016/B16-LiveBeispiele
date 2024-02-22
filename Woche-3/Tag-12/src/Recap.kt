@@ -1,5 +1,4 @@
-
-fun main(){
+fun main() {
 
     namensGenerator()
 
@@ -38,7 +37,7 @@ fun main(){
 }
 
 // --------------------------
-fun kampfRunde(){
+fun kampfRunde() {
     pikachuAttackenAuswahl()
 
     Thread.sleep(1500)      // ms müssen in Long angegeben werden
@@ -56,7 +55,7 @@ var gengarLP = 200
 var pikachuLP = 200
 
 // Gengar ist das gegnerische Pokemon
-fun gengarAttacke(){
+fun gengarAttacke() {
 
     var schaden = (60..80).random()
 
@@ -67,7 +66,7 @@ fun gengarAttacke(){
 }
 
 // Pikachu ist das Pokemon der SpielerIn
-fun pikachuAttackenAuswahl(){
+fun pikachuAttackenAuswahl() {
     // Spieler soll eine Attacke auswählen
     val pikachuAtks = mutableMapOf(
         "Donnerschock" to 40,

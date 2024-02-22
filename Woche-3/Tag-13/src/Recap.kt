@@ -1,4 +1,4 @@
-fun main(){
+fun main() {
 
     // Funktionsaufruf gibt uns den Rückgabewert
     val name1: String = getRandomName()
@@ -21,7 +21,7 @@ fun main(){
 
 }
 
-fun getRandomNumber(): Int{
+fun getRandomNumber(): Int {
     println("In welchem Bereich soll eine Zufallszahl generiert werden?")
     val von: Int = readln().toInt()
     val bis: Int = readln().toInt()
@@ -73,14 +73,15 @@ val NACHNAMEN = listOf(
     "Krüger"
 )
 
-fun getRandomName(): String{
+fun getRandomName(): String {
     return VORNAMEN.random() + " " + NACHNAMEN.random()
 }
 
-fun getTwoNames(): Pair<String, String>{
+fun getTwoNames(): Pair<String, String> {
     return getRandomName() to getRandomName()
 }
-fun getTenNames(): List<String>{
+
+fun getTenNames(): List<String> {
     return listOf(
         getRandomName(),
         getRandomName(),

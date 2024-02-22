@@ -68,19 +68,19 @@ fun main() {
         Thread.sleep(200)
     }
 
-/*
-    // Beide Spieler ziehen eine karte (2. Karte)
-    println("$player1Name zieht eine Karte...")
-    player1Cards.add(deck.removeFirst())
-    println("$player2Name zieht eine Karte...")
-    player2Cards.add(deck.removeFirst())
+    /*
+        // Beide Spieler ziehen eine karte (2. Karte)
+        println("$player1Name zieht eine Karte...")
+        player1Cards.add(deck.removeFirst())
+        println("$player2Name zieht eine Karte...")
+        player2Cards.add(deck.removeFirst())
 
-    // Beide Spieler ziehen eine karte (3. Karte)
-    println("$player1Name zieht eine Karte...")
-    player1Cards.add(deck.removeFirst())
-    println("$player2Name zieht eine Karte...")
-    player2Cards.add(deck.removeFirst())
-    */
+        // Beide Spieler ziehen eine karte (3. Karte)
+        println("$player1Name zieht eine Karte...")
+        player1Cards.add(deck.removeFirst())
+        println("$player2Name zieht eine Karte...")
+        player2Cards.add(deck.removeFirst())
+        */
 
     // Hände ausdrucken:
     println()
@@ -104,7 +104,7 @@ fun main() {
     println()
     println("️${player1Name}'s Karten: \n   ${player1Cards.joinToString("\n   ")}")
     println("${player2Name}'s Karten: $player2Cards")
-    
+
     println()
 
     // Aufgabe 5: Spieler dürfen Karte neu ziehen
@@ -143,11 +143,11 @@ fun main() {
 
     println("$player1Name hat die Karte $player1WorstCard abgeworfen und die Karte $newCardPlayer1 gezogen")
 
-/*
-    val randomCard = deck.random()
-    val kartenFarbe = randomCard[0]
-    val kartenWert = randomCard[2]
-*/
+    /*
+        val randomCard = deck.random()
+        val kartenFarbe = randomCard[0]
+        val kartenWert = randomCard[2]
+    */
 
 
     // Aufgabe 6: Wer hat bessere Karten?

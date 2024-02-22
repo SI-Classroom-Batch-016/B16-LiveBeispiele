@@ -1,4 +1,4 @@
-fun main(){
+fun main() {
     simplerCountdown(5)
 }
 
@@ -9,7 +9,7 @@ fun main(){
  *
  * @param sec Die Anzahl der Sekunden im Countdown. Die Funktion wird beendet, wenn `sec` kleiner als 1 ist.
  */
-fun simplerCountdown(sec: Int){
+fun simplerCountdown(sec: Int) {
     // If-Verzweigung für Abbruch:
     //   Wenn Timer kleiner als 1 ist, wird die Funktion beendet
     if (sec < 1) {

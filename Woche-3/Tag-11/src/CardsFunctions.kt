@@ -7,7 +7,7 @@ val player2Cards = mutableListOf<String>()
 var player1HandValue = 0
 var player2HandValue = 0
 
-fun main(){
+fun main() {
     /*
         In der Regel versucht man die Main-Funktion so 'ordentlich' wie möglich zu halten.
         Der Großteil des Programms spielt sich also nicht in der Main-Funktion ab
@@ -20,7 +20,7 @@ fun main(){
 }
 
 
-fun cardGame(){
+fun cardGame() {
     neuerKartenstapel()
     kartenMischen()
     kartenAusteilen()
@@ -29,24 +29,25 @@ fun cardGame(){
     punktzahlenAnzeigen()
 }
 
-fun neuerKartenstapel(){
-    cards = mutableListOf("♥️7", "♦️7", "♠️7", "♣️7",
-    "♥️8", "♦️8", "♠️8", "♣️8",
-    "♥️9", "♦️9", "♠️9", "♣️9",
-    "♥️10", "♦️10", "♠️10", "♣️10",
-    "♥️B", "♦️B", "♠️B", "♣️B",
-    "♥️D", "♦️D", "♠️D", "♣️D",
-    "♥️K", "♦️K", "♠️K", "♣️K",
-    "♥️A", "♦️A", "♠️A", "♣️A",
-    "🃏JOKER"
+fun neuerKartenstapel() {
+    cards = mutableListOf(
+        "♥️7", "♦️7", "♠️7", "♣️7",
+        "♥️8", "♦️8", "♠️8", "♣️8",
+        "♥️9", "♦️9", "♠️9", "♣️9",
+        "♥️10", "♦️10", "♠️10", "♣️10",
+        "♥️B", "♦️B", "♠️B", "♣️B",
+        "♥️D", "♦️D", "♠️D", "♣️D",
+        "♥️K", "♦️K", "♠️K", "♣️K",
+        "♥️A", "♦️A", "♠️A", "♣️A",
+        "🃏JOKER"
     )
 }
 
-fun kartenMischen(){
+fun kartenMischen() {
     cards.shuffled()
 }
 
-fun kartenAusteilen(){
+fun kartenAusteilen() {
     // Beide Spieler ziehen eine karte
     println("Spieler 1 zieht eine Karte...")
     player1Cards.add(cards.removeFirst())
@@ -66,19 +67,19 @@ fun kartenAusteilen(){
     player2Cards.add(cards.removeFirst())
 }
 
-fun kartenAnzeigen(){
+fun kartenAnzeigen() {
     println()
     println("Spieler 1 Karten: $player1Cards")
     println("Spieler 2 Karten: $player2Cards")
     println()
 }
 
-fun punktzahlenAnzeigen(){
+fun punktzahlenAnzeigen() {
     println("Die Karten von Spieler 1 haben einen Wert von: $player1HandValue")
     println("Die Karten von Spieler 2 haben einen Wert von: $player2HandValue")
 }
 
-fun punktzahlenBerechnen(){
+fun punktzahlenBerechnen() {
     player1HandValue += cardValues[player1Cards[0]]!!
     player1HandValue += cardValues[player1Cards[1]]!!
     player1HandValue += cardValues[player1Cards[2]]!!

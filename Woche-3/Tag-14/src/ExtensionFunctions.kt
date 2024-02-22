@@ -1,6 +1,6 @@
 import kotlin.math.round
 
-fun main(){
+fun main() {
     println("test".erstesZeichenGross())
     println("TEST".erstesZeichenGross())
     println("test test".erstesZeichenGross())
@@ -50,7 +50,7 @@ fun String.erstesZeichenGross(): String {
  *
  * @return Die gerundete ganze Zahl.
  */
-fun Double.gerundet(): Int{
+fun Double.gerundet(): Int {
     return round(this).toInt()
 }
 
@@ -64,7 +64,7 @@ fun Double.gerundet(): Int{
  * @param einheit Die Einheit, die dem Geldbetrag hinzugefügt werden soll (z.B., "$").
  * @return Der formatierte Geldbetrag als String.
  */
-fun Double.geldBetrag(einheit: String): String{
+fun Double.geldBetrag(einheit: String): String {
     return "%.2f$einheit".format(this)
 }
 
@@ -74,7 +74,7 @@ fun Double.geldBetrag(einheit: String): String{
  *
  * @return `true`, wenn die Zahl gerade ist, ansonsten `false`.
  */
-fun Int.geradeZahl(): Boolean{
+fun Int.geradeZahl(): Boolean {
     return this % 2 == 0
 }
 
@@ -83,7 +83,7 @@ fun Int.geradeZahl(): Boolean{
  *
  * @return `true`, wenn die Zahl ungerade ist, ansonsten `false`.
  */
-fun Int.ungeradeZahl(): Boolean{
+fun Int.ungeradeZahl(): Boolean {
     return this % 2 == 1
 }
 
@@ -96,15 +96,15 @@ fun Int.ungeradeZahl(): Boolean{
  *
  * @return `true`, wenn die Zahl eine Primzahl ist, andernfalls `false`.
  */
-fun Int.primZahl(): Boolean{
+fun Int.primZahl(): Boolean {
     if (this < 2)
         throw IllegalArgumentException("Die Zahl $this kann nicht auf Primzahl überprüft werden.")
 
     if (this == 2)
         return true
 
-    for (i in 2..<this){
-        if (this % i == 0){
+    for (i in 2..<this) {
+        if (this % i == 0) {
             return false
         }
     }

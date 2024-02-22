@@ -12,10 +12,10 @@
  *  - [preisAbfrage]
  *  - [gesamtPreisBerechnen]
  */
-fun main(){
+fun main() {
 
     // Die Produkte um ein Produkt erweitern
-    produktSortiment["Maoam Kaugummi"] =  Pair(1.5, zufallsZahl(1, 5))
+    produktSortiment["Maoam Kaugummi"] = Pair(1.5, zufallsZahl(1, 5))
 
 
     // Fügt ein Zufallsprodukt zum Warenkorb hinzu
@@ -88,7 +88,7 @@ val produktSortiment: MutableMap<String, Pair<Double, Int>> = mutableMapOf(
  * ist der Warenkorb leer und enthält keine Produkte mehr.
  *
  */
-fun warenkorbLeeren(){
+fun warenkorbLeeren() {
     warenkorb.clear()
 }
 
@@ -106,7 +106,6 @@ fun warenkorbLeeren(){
 fun preisAbfrage(product: String): Double {
     return produktSortiment[product]?.first ?: throw IllegalArgumentException("Ungültiges Produkt")
 }
-
 
 
 /**

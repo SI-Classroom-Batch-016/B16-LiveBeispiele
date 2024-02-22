@@ -34,7 +34,7 @@ var gold: Double = 50.0
 //TODO: Die Funktion trankKaufen() soll einem Spieler ermöglichen, einen Trank vom Händler zu kaufen.
 //      Sie sollte den Nutzer nach dem gewünschten Trank fragen, den Bestand überprüfen,
 //      den Kauf abwickeln (Inventar aktualisieren und Gold abziehen) und entsprechende Meldungen ausgeben.
-fun trankKaufen(){
+fun trankKaufen() {
 
 }
 
@@ -42,13 +42,13 @@ fun trankKaufen(){
 //TODO: Die Funktion trankTrinken(trank: String) soll einen Trank aus dem Inventar trinken.
 //      Sie soll prüfen und ausgeben, ob der Trank vorhanden ist.
 //      Dann sollte sie den Trank konsumieren, also das Inventar aktualisieren und entsprechende Meldungen ausgeben.
-fun trankTrinken(trank: String){
+fun trankTrinken(trank: String) {
 
 }
 
 //TODO: Die Funktion trankVerkaufen(trank: String) soll einen Trank an den Händler verkaufen.
 //      Sie sollte das Inventar überprüfe und den Verkauf abwickeln (Inventar aktualisieren und Gold erhöhen)
 //      und entsprechende Meldungen ausgeben.
-fun trankVerkaufen(trank: String){
+fun trankVerkaufen(trank: String) {
 
 }

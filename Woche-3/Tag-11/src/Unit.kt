@@ -1,6 +1,4 @@
-
-
-fun main(){
+fun main() {
     // Führe einfach die printGreeting Funktion aus
     printGreeting()
 
@@ -15,6 +13,6 @@ fun main(){
 }
 
 // Print Greeting hat kein Ergebnis, deshalb Kotlin.Unit (kann man also weglassen)
-fun printGreeting(){
+fun printGreeting() {
     println("Hallo")
 }

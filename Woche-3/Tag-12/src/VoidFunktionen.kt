@@ -1,9 +1,11 @@
 // Funktionen ohne Rückgabewert nennt man "Void-Funktionen"
-fun zufallsZahl(){
-    println("""
+fun zufallsZahl() {
+    println(
+        """
         Geben sie ein, in welchem Bereich die Zahl generiert werden soll:
             Format: min..max
-    """.trimIndent())
+    """.trimIndent()
+    )
 
     val inputs: List<String> = readln().split("..")
     val min = inputs[0].toInt()
@@ -60,7 +62,7 @@ val NACHNAMEN = listOf(
     "Krüger"
 )
 
-fun namensGenerator(){
+fun namensGenerator() {
     val name = VORNAMEN.random() + " " + NACHNAMEN.random()
     println("Zufallsname: '$name'")
 }

@@ -1,4 +1,4 @@
-fun main(){
+fun main() {
     println("Geben sie ihren Namen ein:")
     var profilName = readln()
 
@@ -6,7 +6,7 @@ fun main(){
 
     var profilAlter = zufallsZahl(bis = 50)
     profilAlter = zufallsZahl(5)
-    profilAlter = zufallsZahl(bis = 80, von  = 20)
+    profilAlter = zufallsZahl(bis = 80, von = 20)
     profilAlter = zufallsZahl(20, 80)
 
     println("--------")
@@ -23,21 +23,21 @@ fun main(){
     steckbrief("Laura", 42, listOf("Klavier", "Gaming", "Eislauf", "..."))
 }
 
-fun homeScreenAnzeigen(name: String){
+fun homeScreenAnzeigen(name: String) {
     println("Welcome, $name")
 }
 
-fun steckbrief(name: String, alter: Int){
+fun steckbrief(name: String, alter: Int) {
     println("Ich heiße ‘$name’ und bin $alter Jahre alt.")
 }
 
 // Selber Name, anderer Parameter: "Overloading"
-fun steckbrief(name: String, alter: Int, hobbies: List<String>){
+fun steckbrief(name: String, alter: Int, hobbies: List<String>) {
     println("Ich heiße ‘$name’ und bin $alter Jahre alt.\n Meine Hobbies sind:$hobbies")
 }
 
 
-fun beschreibungGenerieren(name: String, alter: Int): String{
+fun beschreibungGenerieren(name: String, alter: Int): String {
     return "Ich heiße ‘$name’ und bin $alter Jahre alt."
 }
 

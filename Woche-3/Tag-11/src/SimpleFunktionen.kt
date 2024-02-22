@@ -1,4 +1,4 @@
-fun main(){
+fun main() {
 
 //    println("Zähler: $zaehler")
     countdown()
@@ -14,7 +14,7 @@ fun main(){
 // Alle anderen Funktionen greifen drauf zu
 var zaehler: Int = 5
 
-fun countdown(){
+fun countdown() {
     // Locale Variablen sind nur innerhalb der Funktion ansprechbar
     // Locale Variablen überschreiben globale Variablen
     zaehler = 3
@@ -32,7 +32,7 @@ fun countdown(){
     println("start!")
 }
 
-fun randomGreeting(){
+fun randomGreeting() {
     var zufallsGruss = listOf("Hi", "Hallo", "Hola", "Moin", "n Guten", "Privet").random()
     println("$zufallsGruss Welt")
 }

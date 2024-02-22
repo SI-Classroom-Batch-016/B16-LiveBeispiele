@@ -1,5 +1,4 @@
-
-fun main(){
+fun main() {
 
     val gehaltInDollar = euroToDollar()
     println("12 Monatsgehalte sind: ${gehaltInDollar * 12} $")
@@ -15,7 +14,7 @@ fun main(){
 }
 
 
-fun euroToDollar(): Double{
+fun euroToDollar(): Double {
     println("Geben sie den Betrag in Euro ein:")
     val euroBetrag = readln().toDouble()
     val dollarBetrag = 1.08 * euroBetrag
@@ -25,7 +24,7 @@ fun euroToDollar(): Double{
     return dollarBetrag // TODO: richtigen Return-wert einsetzen
 }
 
-fun dollarToEuro(): Double{
+fun dollarToEuro(): Double {
     // 1 $ = 0.94 €
     // 1 € = 1 / 0.94 $
     println("Geben sie den Betrag in $ ein:")
@@ -39,15 +38,15 @@ fun fahrenheitToCelsius(): Int {
     // °C = [(°F-32)×5]/9
 //    println("Geben sie jetzt die Temperatur in °F ein:")
     val fahrenheit = temperaturSensor()
-    val celsius = (fahrenheit-32) * 5 / 9
+    val celsius = (fahrenheit - 32) * 5 / 9
     return celsius
 }
 
-fun temperaturSensor(): Int{
+fun temperaturSensor(): Int {
     return (40..120).random()
 }
 
-fun imperialToMetric(): Double{
+fun imperialToMetric(): Double {
     // 1 foot = 12 Inches
     // 1 inch = 2.54 cm
 

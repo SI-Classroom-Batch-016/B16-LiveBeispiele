@@ -1,30 +1,31 @@
-
 val rot = "\u001B[31m"
 val gruen = "\u001B[32m"
 val gelb = "\u001B[33m"
 
-fun main(){
+fun main() {
 
-    println("""
+    println(
+        """
         Name: ${textInFarbe("Gordon", rot)}
         Alter: ${textInFarbe(29.toString(), gruen)}
-    """.trimIndent())
+    """.trimIndent()
+    )
 
 }
 
-fun groesseAnzeigen(feet: Int, inch: Int){
+fun groesseAnzeigen(feet: Int, inch: Int) {
     var m = imperialToMetric(feet, inch)
 
     println("$feet'$inch'' sind ${"%.2f".format(m)}m.")
 
 }
 
-fun geldBetragAnzeigen(betrag: Double, einheit: Char = '€'){
+fun geldBetragAnzeigen(betrag: Double, einheit: Char = '€') {
     println("%.2f$einheit".format(betrag))
 }
 
 
-fun textInFarbe(text: String, farbe: String): String{
+fun textInFarbe(text: String, farbe: String): String {
     return "$farbe$text\u001B[0m"   // [0m = reset
 }
 

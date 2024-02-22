@@ -1,5 +1,4 @@
-
-fun main(){
+fun main() {
     println("Willkommen zum Wechselbüro:")
 
     println("Geben sie einen Dollar Betrag ein:")
@@ -13,7 +12,7 @@ fun main(){
     println("Geben sie den Dollar Betrag für die Sonderaktion ein: ")
     dollar = readDouble()
 
-    euro = dollarToEuro(wechselKurs = 1.0, dollarBetrag = dollar )
+    euro = dollarToEuro(wechselKurs = 1.0, dollarBetrag = dollar)
     euro = dollarToEuro(dollarBetrag = dollar, 1.0)
 
     println("Für Ihre ${zahlZuGeldBetrag(dollar, "$")} erhalten Sie von uns ${zahlZuGeldBetrag(euro, "€")}.")
@@ -24,12 +23,12 @@ fun main(){
 }
 
 // Rückgabe Wert: Double
-fun readDouble(): Double{
+fun readDouble(): Double {
     return readln().replace(",", ".").toDouble()
 }
 
 // Rückgabe Wert: String
-fun zahlZuGeldBetrag(betrag: Double, einheit: String): String{
+fun zahlZuGeldBetrag(betrag: Double, einheit: String): String {
     return "%.2f$einheit".format(betrag)
 }
 
@@ -37,12 +36,12 @@ fun zahlZuGeldBetrag(betrag: Double, einheit: String): String{
 
 // Double Parameter
 // Wechselkurs: standardmässig 0.92, aber können wir auch beliebig eingeben
-fun dollarToEuro(dollarBetrag: Double, wechselKurs: Double = 0.92): Double{
+fun dollarToEuro(dollarBetrag: Double, wechselKurs: Double = 0.92): Double {
     return dollarBetrag * wechselKurs
 }
 
 // String Parameter
-fun dollarToEuro(dollarBetrag: String, wechselKurs: Double = 0.92): Double{
+fun dollarToEuro(dollarBetrag: String, wechselKurs: Double = 0.92): Double {
     // Diese Funktion macht sich die andere Funktion zunutze :)
     return dollarToEuro(dollarBetrag.toDouble(), wechselKurs)
 }

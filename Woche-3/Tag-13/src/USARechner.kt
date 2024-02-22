@@ -1,12 +1,8 @@
-
-
-fun main(){
+fun main() {
 
     geldBetragAnzeigen(7.99, '$')
     geldBetragAnzeigen(125.0238461726456)
     geldBetragAnzeigen(7.99)
-
-
 
 
     var wechselKurs = 0.92
@@ -33,7 +29,6 @@ fun main(){
     var euro = dollarToEuro(readln().toDouble())
 
 
-
     // CHALLENGE
     val tempNYC = 104
     val tempDALLAS = 120
@@ -43,7 +38,6 @@ fun main(){
     val tempNYCCelsius = fahrenheitToCelsius(tempNYC)
     val tempDALLASCelsius = fahrenheitToCelsius(tempDALLAS)
     val tempLACelsius = fahrenheitToCelsius(tempLA)
-
 
 
     // Imperial to Metric
@@ -62,20 +56,20 @@ val euroToDollarKurs = 1.08
 //     dafür sind die DATENTYPEN entscheidend !!
 
 // Hier: Parameter: Double
-fun dollarToEuro(betrag: Double): Double{
+fun dollarToEuro(betrag: Double): Double {
     var euro = dollarToEuroKurs * betrag
     return euro
 }
 
 // Hier: Parameter: String
-fun dollarToEuro(betrag: String): Double{
+fun dollarToEuro(betrag: String): Double {
     var euro = dollarToEuroKurs * betrag.toDouble()
     return euro
 }
 
 
 // Parameter immer in Camelcase
-fun dollarToEuro(betrag: Double, wechselKurs: Double = dollarToEuroKurs): Double{
+fun dollarToEuro(betrag: Double, wechselKurs: Double = dollarToEuroKurs): Double {
     // 1 $ = 0.94 €
     // 1 € = 1 / 0.94 $
     var euro = wechselKurs * betrag
@@ -85,12 +79,12 @@ fun dollarToEuro(betrag: Double, wechselKurs: Double = dollarToEuroKurs): Double
 fun fahrenheitToCelsius(fahrenheit: Int): Int {
     // °C = [(°F-32)×5]/9
 
-    val celsius = (fahrenheit-32) * 5 / 9
+    val celsius = (fahrenheit - 32) * 5 / 9
     return celsius
 }
 
 // TODO: Parameter einbauen für bessere Nutzung
-fun imperialToMetric(): Double{
+fun imperialToMetric(): Double {
     // 1 foot = 12 Inches
     // 1 inch = 2.54 cm
 
@@ -104,7 +98,7 @@ fun imperialToMetric(): Double{
     return m
 }
 
-fun imperialToMetric(feet: Int, inch: Int): Double{
+fun imperialToMetric(feet: Int, inch: Int): Double {
     var cm = (feet * 12 + inch) * 2.54
     var m = cm / 100
 

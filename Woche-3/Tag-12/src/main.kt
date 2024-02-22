@@ -1,5 +1,4 @@
-
-fun main(){
+fun main() {
 
     val zahl1 = getRandomNumber()
 

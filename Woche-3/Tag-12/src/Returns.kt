@@ -1,10 +1,9 @@
 import kotlin.random.Random
 
-fun main(){
+fun main() {
 
     val zahl = getRandomNumber()
     println("Die Zufällige Zahl ist: $zahl")
-
 
 
     var a = calculateSum()
@@ -31,7 +30,7 @@ fun main(){
 }
 
 
-fun getRandomBoolean():Boolean {
+fun getRandomBoolean(): Boolean {
     return listOf(true, true, true, false, false).random()
 }
 
@@ -59,16 +58,18 @@ fun calculateSumAndDiff(): Pair<Double, Double> {
     return Pair(sum, diff)
 }
 
-fun namensGeneratorReturn(): String{
+fun namensGeneratorReturn(): String {
     var name = VORNAMEN.random() + " " + NACHNAMEN.random()
     return name
 }
 
-fun zufallsZahlReturn(): Int{
-    println("""
+fun zufallsZahlReturn(): Int {
+    println(
+        """
         Geben sie ein, in welchem Bereich die Zahl generiert werden soll:
             (Format: min..max)
-    """.trimIndent())
+    """.trimIndent()
+    )
 
     val inputs = readln().split("..")
     val min = inputs[0].toInt()
@@ -79,25 +80,29 @@ fun zufallsZahlReturn(): Int{
     return zufallsZahl
 }
 
-fun zufallsKommaZahl(): Double{
-    println("""
+fun zufallsKommaZahl(): Double {
+    println(
+        """
         Geben sie ein, in welchem Bereich die Zahl generiert werden soll:
             (Format: min..max)
-    """.trimIndent())
+    """.trimIndent()
+    )
 
 //    val inputs = readln().split("..")
     val min = readln().toInt() // inputs[0].toInt()
     val max = readln().toInt() // inputs[1].toInt()
 
-    var zahl: Double = (min..max -1).random().toDouble() + Random.nextDouble()
+    var zahl: Double = (min..max - 1).random().toDouble() + Random.nextDouble()
     return zahl
 }
 
-fun getRandomNumber(): Int{
-    println("""
+fun getRandomNumber(): Int {
+    println(
+        """
         Geben sie ein, in welchem Bereich die Zahl generiert werden soll:
             Format: min..max
-    """.trimIndent())
+    """.trimIndent()
+    )
 
     val inputs = readln().split("..")
     val min = inputs[0].toInt()
@@ -109,12 +114,12 @@ fun getRandomNumber(): Int{
     println("Die Zufallszahl ist: $zufallsZahl")
 }
 
-fun getTwoRandomNumbers(): Pair<Int, Int>{
+fun getTwoRandomNumbers(): Pair<Int, Int> {
     val numbers: Pair<Int, Int> = getRandomNumber() to getRandomNumber()
     return numbers
 }
 
-fun getRandomName(): String{
+fun getRandomName(): String {
     return VORNAMEN.random() + " " + NACHNAMEN.random()
 }
 
@@ -127,7 +132,7 @@ fun getAge(): Int {
     return age
 }
 
-fun getRandomFussballTeam(): List<String>{
+fun getRandomFussballTeam(): List<String> {
     return listOf(
         getRandomName(),
         getRandomName(),
@@ -143,11 +148,11 @@ fun getRandomFussballTeam(): List<String>{
     )
 }
 
-fun kampf(): Boolean{
+fun kampf(): Boolean {
     return false
 }
 
-fun getRandomAttack(): Pair<String, IntRange>{
+fun getRandomAttack(): Pair<String, IntRange> {
     val attacken = mapOf(
         "Tackle" to 40..50,
         "Feuersturm" to 120..140,

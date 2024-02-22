@@ -1,7 +1,6 @@
 package automat
 
 
-
 val automat: MutableMap<String, Double> = mutableMapOf(
     "Snickers" to 1.50,
     "Mars" to 1.50,
@@ -15,7 +14,7 @@ val automat: MutableMap<String, Double> = mutableMapOf(
 var guthaben: Double = 10.0
 var auswahl: String = ""
 
-fun main(){
+fun main() {
     /* TODO:
         Rufe hier die anderen 3 Funktionen in der richtigen Reihenfolge auf.
            Schaffst du es auch, dass der Automat nicht nach einer Auswahl beendet ist?
@@ -43,8 +42,7 @@ fun angebotAnzeigen() {
 }
 
 
-
-fun auswahlTreffen(){
+fun auswahlTreffen() {
     /* TODO:
         Diese Funktion soll dem Kunden erlauben, via der Konsole ein Produkt aus dem Automaten zu wählen,
             zB via einer Zahleneingabe.
@@ -53,7 +51,7 @@ fun auswahlTreffen(){
      */
 
     print("Wählen sie ihr Produkt: ")
-    val eingabe = readln().toInt() -1
+    val eingabe = readln().toInt() - 1
     auswahl = automat.keys.elementAt(eingabe)
 
     val preis = automat[auswahl]!!
@@ -62,7 +60,7 @@ fun auswahlTreffen(){
 }
 
 
-fun rueckgeldBerechnen(){
+fun rueckgeldBerechnen() {
     /* TODO:
         Diese Funktion soll das verbleibende Guthaben im Automaten berechnen
      */
