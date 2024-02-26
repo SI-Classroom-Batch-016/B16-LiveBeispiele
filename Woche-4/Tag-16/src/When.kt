@@ -27,22 +27,6 @@ fun main(){
         }
     }
 
-
-    if (){}
-    else if (){}
-    else {}
-
-
-    when (){
-        ... -> {}
-        ... -> {}
-    }
-
-
-
-
-
-
 }
 
 var gueltigenEingaben = listOf<String>()
