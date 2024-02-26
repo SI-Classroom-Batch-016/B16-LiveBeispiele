@@ -1,4 +1,4 @@
-package Videothek
+package videothek
 import kotlin.random.Random
 
 // Die FilmListe hat alle unsere Filme

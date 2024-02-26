@@ -1,4 +1,4 @@
-package Videothek
+package videothek
 
 
 fun main() {
@@ -12,8 +12,8 @@ fun main() {
     println("\nWir bieten folgende ${filmListe.size} Filme an:\n")
 
     // Durchschnittspreis:
-    var allePreise = filmToPrice.values
-    var durchschnittsPreis = allePreise.sum() / allePreise.size
+//    var allePreise = filmToPrice.values
+//    var durchschnittsPreis = allePreise.sum() / allePreise.size
 
 
     var film = filmListe[0]
@@ -25,10 +25,8 @@ fun main() {
 
     filmListe.forEach {
         film ->
-            println("%s (%.2f€): %s - : %.1f".format(
-                film,
+            println("$film (%.2f€): ${genreAbfrage(film)} - : %.1f".format(
                 preisAbfrage(film),
-                genreAbfrage(film),
                 bewertungsAbfrage(film)
             ))
     }
@@ -54,4 +52,11 @@ fun main() {
     // Den gewählten Film aus dem Sortiment nehmen
     println()
     var erfolg: Boolean = filmVerkauf()
+
+    if (erfolg){
+        println("Danke und bis zum nächsten Mal")
+    } else {
+        main()
+    }
+
 }

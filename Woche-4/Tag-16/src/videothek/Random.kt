@@ -1,5 +1,4 @@
-package Videothek
-import kotlin.random.Random
+package videothek
 
 
 // Diese Funktion erstellt eine zufällige Bewertung
@@ -20,23 +19,33 @@ fun generateRatings(): MutableList<Int>{
 
 // TODO: Aufgabe 2: Zufällige Preise
 fun randomPrice(min: Double = 2.0, max: Double = 5.0): Double{
-    // Einfachste Lösung:
+    // Nicht möglich
+//    (2.0..5.0).random()
+
+
+    // Version 1: Liste mit verschiedenen Preisen
     /*
         var preise = listOf(2.0, 2.5, 3.0, 3.5, 4.0, 4.5, 5.0)
         return preise.random()
      */
 
-    var euro = (min.toInt()..< max.toInt()).random()
-    var cent = (0..99).random()
-
-    return euro.toDouble() + cent/100.0
-
-    // Version 3: mit Random.nextDouble
+    // Version 2: mit Random.nextDouble
 //    return Random.nextDouble(min, max)
+
+    // Version 3: Euro und Cent getrennt generieren
+    val euro = (min.toInt()..< max.toInt()).random()
+    val cent = (0..99).random()
+    var preis = euro.toDouble() + cent/100.0
+
 
     /* Version 4:
     cent = (200..499).random()
     return cent / 100.0
     */
+
+    // Optional: Preis auf 2 Komma stellen runden
+    preis = "%.2f".format(preis).replace(',', '.').toDouble()
+
+    return preis
 }
 

@@ -1,4 +1,4 @@
-package Videothek
+package videothek
 
 // TODO: Aufgabe 3a: Preisabfrage
 fun preisAbfrage(film: String): Double{
@@ -20,7 +20,7 @@ fun genreAbfrage(film: String): String {
 
 // TODO: Aufgabe 3c: Bewertungsabfrage
 fun bewertungsAbfrage(film: String): Double{
-    val bewertungen = filmRatings[film] ?: listOf<Int>()
+    val bewertungen: List<Int> = filmRatings[film] ?: listOf<Int>()
 
     // Durchschnitt = Summe_aller_Bewertungen / Anzahl_Bewertungen
 //    var durchschnitt: Double = bewertungen.sum().toDouble() / bewertungen.size
@@ -51,23 +51,23 @@ fun minPreis(): String{
 fun maxRating(): String{
     var filme = filmRatings.keys
 
-    var bewertungen: MutableList<Double> = mutableListOf<Double>()
+    var avgBewertungen: MutableList<Double> = mutableListOf<Double>()
     filme.forEach {
-        it -> bewertungen.add(bewertungsAbfrage(it))
+        it -> avgBewertungen.add(bewertungsAbfrage(it))
     }
 
-    var maxRating = bewertungen.max()
-    var index = bewertungen.indexOf(maxRating)
+    var maxRating = avgBewertungen.max()
+    var index = avgBewertungen.indexOf(maxRating)
     var film = filme.elementAt(index)
 
     return film
 }
 
 // TODO: Aufgabe 6: Filme nach Alphabet sortieren
-// Unsortiertes Sortiment finde ich bei filmListe
-fun sortByAlphabet(): MutableList<String> {
-//    filmListe.sort()
-    return filmListe.sorted().toMutableList()
+fun sortByAlphabet(): List<String> {
+    // Unsortiertes Sortiment finde ich bei filmListe
+    //    filmListe.sort()
+    return filmListe.sorted()
 }
 
 // Bonus: Filme nach Preis sortieren
@@ -88,13 +88,14 @@ fun sortByRating(): List<String> {
 fun filmVerkauf(): Boolean{
     println("Wählen sie einen Film aus der Liste:")
 
+    // Druckt jeden Film in einer Zeile aus, mit Index für Eingabe
+    /*
     println("[${0 + 1}] für '${filmListe[0]}'")
     println("[${1 + 1}] für '${filmListe[1]}'")
     println("[${2 + 1}] für '${filmListe[2]}'")
-
-    // Druckt jeden Film in einer Zeile aus, mit Index für Eingabe
-    filmListe.indices.forEach {
-        i -> println("[${i + 1}] für '${filmListe[i]}'")
+    */
+    filmListe.forEachIndexed { i, film ->
+        println("[${i + 1}] für '${film}'")
     }
 
     var index = readln().toInt() - 1 // -1, sodass ich zB 1 für den 1. Film eingeben kann
@@ -106,10 +107,11 @@ fun filmVerkauf(): Boolean{
     println()
 
     val success: Boolean = filmListe.remove(film)
-
-/*    filmToGenre.remove(film)
+/*
+    filmToGenre.remove(film)
     filmToPrice.remove(film)
-    filmRatings.remove(film)*/
+    filmRatings.remove(film)
+    */
 
     return success   // Film aus dem Sortiment nehmen
 }
