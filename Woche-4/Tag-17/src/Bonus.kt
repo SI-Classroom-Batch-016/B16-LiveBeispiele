@@ -54,9 +54,9 @@ fun game(){
  *   Wenn das Auto noch nicht im Ziel ist, soll es fahren.
  *      Dabei macht es einen Fortschritt der zufällig zw. 1 und Speed liegt.
  *      Jedes mal, wenn das Auto fährt, soll die Zeit um 1 erhöht werden,
- *      und der Tank um einen zufälligen Wert zwischen 3..7 Reduziert werden.
+ *      und der Tank um einen zufälligen Wert zwischen 3..7 reduziert werden.
  *   Sollte der Tank weniger als 7 betragen, muss das Auto einen Pitstop ablegen und kann nicht fahren.
- *      Der Pitstop kostet eine Zeit von 3 und füllt den Tag wieder auf das Maximum auf.
+ *      Der Pitstop kostet eine Zeit von 3 und füllt den Tank wieder auf das Maximum auf.
  */
 fun drive(car: MutableMap<String, Int>){
 
