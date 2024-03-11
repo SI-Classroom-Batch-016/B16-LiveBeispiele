@@ -44,3 +44,47 @@ fun aufgabe6(){
     println(numbers)
 
 }
+
+
+// Gegeben sind Listen mit Filmtiteln.
+//Erstelle eine Funktion, die eine Do-While-Schleife enthält und übergebe nach und nach die Filmlisten
+//Die Funktion solle die Liste mit den Lieblingsfilmen durchlaufen und prüfen, ob der Film "Matrix" in der Liste ist.
+//Wenn der Film "Matrix" in der Liste ist, soll in der Konsole "Ja, der Film Matrix ist in der Liste." ausgegeben werden.
+//Zusätzlich soll die Stelle in der Liste ausgegeben werden, an der sich der Film "Matrix" befindet.
+//Du darfst für diese Aufgabe nicht die contains()-Funktion für Listen verwenden.
+fun aufgabe5(){
+    var filme1: List<String> = listOf(
+        "Batman",
+        "Frankenstein",
+        "Jurassic Park",
+        "Grand Budapest Hotel",
+        "Harry Potter"
+    )
+    var filme2: List<String> = listOf(
+        "Batman",
+        "Frankenstein",
+        "Jurassic Park",
+        "Matrix",
+        "Harry Potter"
+    )
+    var filme3: List<String> = listOf(
+        "Batman",
+        "Frankenstein",
+        "Jurassic Park",
+        "Django",
+        "Harry Potter"
+    )
+
+    if(matrixInFilmliste(filme1)){
+        println("Ja, ...")
+        val index = filme1.indexOf("Matrix")
+        println(index)
+    }
+    println(matrixInFilmliste(filme2))
+    println(matrixInFilmliste(filme3))
+}
+
+fun matrixInFilmliste(filmListe: List<String>): Boolean{
+    // siehe EinZiel5Wege.kt
+    return true
+}
