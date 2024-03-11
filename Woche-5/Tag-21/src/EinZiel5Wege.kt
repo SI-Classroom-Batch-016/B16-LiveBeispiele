@@ -10,7 +10,6 @@ fun main(){
 
     //--------------------------------
     // Repeat Schleife
-
     var istFreitagInDerListe: Boolean = false
     repeat(tagListe.size){
         if (tagListe[it] == "Freitag")

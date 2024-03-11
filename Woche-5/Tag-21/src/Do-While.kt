@@ -1,4 +1,13 @@
 fun main() {
+    // Beispiel: Wenn Schleife einmal beendet ist, ist sie auch vorbei
+    var scheibenWischerAn = true
+    while(scheibenWischerAn){
+        println("...")
+        scheibenWischerAn = false
+    }
+    scheibenWischerAn = true
+
+
     //  Simpler 10x loop
     println("While:")
     var i: Int = 10
@@ -11,7 +20,7 @@ fun main() {
     println()
     println()
     println("Do While:")
-    i = 0
+    i = 10
     do {
         print("$i.. ")
         i++   // i = i + 1
@@ -20,6 +29,7 @@ fun main() {
 
     println()
     var anzahlVersuche = 0
+    var login = false
     do {
         if (anzahlVersuche > 0 ){
             println("Bitte überprüfen sie ihre Eingabe")
@@ -27,8 +37,13 @@ fun main() {
         println("Geben sie das Passwort ein (noch ${3 - anzahlVersuche} Versuche)")
         var pwEingabe = readln()
         anzahlVersuche++
+
+        login = pwEingabe == "admin"
     } while (pwEingabe != "admin" && anzahlVersuche < 3)
 
-    println("Erfolgreich eingeloggt??")
+    if (login)
+        println("Erfolgreich eingeloggt?")
+    else
+        println("maximale Anzahl versuche erreicht")
 
 }

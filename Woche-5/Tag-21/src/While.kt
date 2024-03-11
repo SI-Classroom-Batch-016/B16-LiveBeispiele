@@ -1,15 +1,21 @@
 fun main() {
-    println("-----While:-----")
+/*
+    while(bedingung){       "Solange die Bedingung wahr ist, mach folgendes"
+        Code...
+    }
+*/
 
+
+
+    println("-----While:-----")
     //  Simpler 10x loop
     var i: Int = 0
     while (i < 10) {
-        i++   // i = i + 1
         println(i)
+        i++   // i = i + 1
     }
 
     println("-----Repeat:-----")
-
     // Alternative mit Repeat:
     repeat(10) { it ->
         println(it)
@@ -49,5 +55,8 @@ fun main() {
         println("Der Spieler hat gewonnen")
     else
         println("Der Gegner hat gewonnen")
+
+
+
 
 }
