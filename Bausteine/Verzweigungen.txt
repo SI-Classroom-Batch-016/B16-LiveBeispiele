@@ -1,0 +1,29 @@
+// if - Bedingung
+if (..){
+   ...
+}
+
+// If - Else Verzweigung
+if (..){
+    ...
+}
+else {
+    ...
+}
+
+
+// If - ElseIf Verzweigung
+if (..){
+    ...
+}
+else if (..){
+    ...
+}
+...
+
+// When-Verzweigung
+when (..){
+    .. -> {...}
+    .. -> {...}
+    else -> {...}
+}

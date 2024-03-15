@@ -1,0 +1,10 @@
+// Eine Variable/Konstante benötigt immer:
+//      - einen Namen       (kleingeschrieben)
+//      - einen Datentyp    (großgeschrieben)
+//      - einen Wert
+
+// So wird eine Variable Definiert:
+var name: Datentyp = wert
+
+// So wird eine Konstante definiert:
+val name: Datentyp = wert

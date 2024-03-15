@@ -1,0 +1,29 @@
+// Repeat Schleife
+repeat (..){
+    ...
+}
+
+// While Schleife
+while (..){
+    ...
+}
+
+// Do-While Schleife
+do {
+    ...
+} while (..)
+
+// For-Schleife
+for (.. in ..){
+    ...
+}
+
+// For-Each Funktion & andere Lambda Funktionen:
+xx.forEach { .. ->
+    ...
+}
+
+
+
+
+

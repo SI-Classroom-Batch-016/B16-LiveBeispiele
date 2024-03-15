@@ -1,0 +1,17 @@
+
+// Funktion Definition:
+
+fun name(..): xx{
+    ...
+}
+
+// In die (..) gehören die Parameter.
+// ein Parameter besteht aus 2 Teilen: Name und Datentyp, zB:
+    text: String
+
+// Mehrere Parameter werden via Komma getrennt, zB:
+    name: String, alter: Int
+
+// Nach den () kommt ggf. der Rückgabe-Datentyp markiert durch einen :
+// Wenn eine Funktion einen Rückgabe-Datentyp hat, brauchen wir ein return statement
+
