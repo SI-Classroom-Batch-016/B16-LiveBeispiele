@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/B16-LiveBeispiele.iml" filepath="$PROJECT_DIR$/B16-LiveBeispiele.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Bausteine/Bausteine.iml" filepath="$PROJECT_DIR$/Bausteine/Bausteine.iml" />
       <module fileurl="file://$PROJECT_DIR$/Woche-1/Tag-1/Tag-1.iml" filepath="$PROJECT_DIR$/Woche-1/Tag-1/Tag-1.iml" />
       <module fileurl="file://$PROJECT_DIR$/Woche-2/Tag-10/Tag-10.iml" filepath="$PROJECT_DIR$/Woche-2/Tag-10/Tag-10.iml" />
       <module fileurl="file://$PROJECT_DIR$/Woche-3/Tag-11/Tag-11.iml" filepath="$PROJECT_DIR$/Woche-3/Tag-11/Tag-11.iml" />
@@ -21,6 +22,7 @@
       <module fileurl="file://$PROJECT_DIR$/Woche-5/Tag-23/Tag-23.iml" filepath="$PROJECT_DIR$/Woche-5/Tag-23/Tag-23.iml" />
       <module fileurl="file://$PROJECT_DIR$/Woche-5/Tag-24/Tag-24.iml" filepath="$PROJECT_DIR$/Woche-5/Tag-24/Tag-24.iml" />
       <module fileurl="file://$PROJECT_DIR$/Woche-5/Tag-25/Tag-25.iml" filepath="$PROJECT_DIR$/Woche-5/Tag-25/Tag-25.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Woche-6/Tag-26/Tag-26.iml" filepath="$PROJECT_DIR$/Woche-6/Tag-26/Tag-26.iml" />
       <module fileurl="file://$PROJECT_DIR$/Woche-1/Tag-3/Tag-3.iml" filepath="$PROJECT_DIR$/Woche-1/Tag-3/Tag-3.iml" />
       <module fileurl="file://$PROJECT_DIR$/Woche-1/Tag-4/Tag-4.iml" filepath="$PROJECT_DIR$/Woche-1/Tag-4/Tag-4.iml" />
       <module fileurl="file://$PROJECT_DIR$/Woche-1/Tag-5/Tag-5.iml" filepath="$PROJECT_DIR$/Woche-1/Tag-5/Tag-5.iml" />
@@ -33,6 +35,7 @@
       <module fileurl="file://$PROJECT_DIR$/Woche-3/Woche-3.iml" filepath="$PROJECT_DIR$/Woche-3/Woche-3.iml" />
       <module fileurl="file://$PROJECT_DIR$/Woche-4/Woche-4.iml" filepath="$PROJECT_DIR$/Woche-4/Woche-4.iml" />
       <module fileurl="file://$PROJECT_DIR$/Woche-5/Woche-5.iml" filepath="$PROJECT_DIR$/Woche-5/Woche-5.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Woche-6/Woche-6.iml" filepath="$PROJECT_DIR$/Woche-6/Woche-6.iml" />
     </modules>
   </component>
 </project>
