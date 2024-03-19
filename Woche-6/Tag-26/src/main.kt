@@ -13,7 +13,9 @@ fun main(){
     println("------")
 
 
-    val kevin = Person("Kevin M.", 9)
+    var kevin = Person("Kevin M.", 9)
+
+    kevin = Person("Marcel")
 
     kevin.alter ++
 
