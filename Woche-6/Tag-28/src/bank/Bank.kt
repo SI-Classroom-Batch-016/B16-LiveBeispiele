@@ -7,10 +7,13 @@ class Bank {
         this.register = register
         this.jahresZins = jahresZins
     }
+    constructor() : this(jahresZins = 5.0, register = mutableMapOf(0 to Konto("Suppenkasper"))) {
+
+    }
 
     fun openAccount(name: String) {
         // Konto erstellen
-        val konto: Konto = Konto(name)
+        val konto: Konto = Konto( name)
 
         // Konto zum Register hinzufügen
         this.register[0] = konto

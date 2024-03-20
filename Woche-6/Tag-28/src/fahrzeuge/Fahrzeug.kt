@@ -2,7 +2,7 @@ package fahrzeuge
 
 
 // Basisklasse muss als offen definiert werden
-open class Fahrzeug(val ps: Int){
+open class Fahrzeug(val ps: Int = 1){
 
     var motorAn: Boolean = false
     var aktuelleGeschwindigkeit: Int = 0

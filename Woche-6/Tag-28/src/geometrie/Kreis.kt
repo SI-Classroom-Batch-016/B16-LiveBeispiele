@@ -1,19 +1,19 @@
 package geometrie
 
-class Kreis(color: String, val a: Int) : Form(color) {
+class Kreis(color: String, val r: Int, name: String) : Form(color, name) {
 
     override fun info() {
         // super.info()
-        println("Dieser Kreis hat die Farbe: $color")
+        println("Dieser Kreis hat die Farbe: $color mit namen: $name")
     }
 
     fun flaeche() : Double {
         super.info()
-        return Math.PI * a * a
+        return Math.PI * r * r
     }
 
     fun umfang() : Double {
-        return Math.PI * a * 2
+        return Math.PI * r * 2
     }
 }
 

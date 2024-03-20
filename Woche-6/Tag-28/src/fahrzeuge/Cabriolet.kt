@@ -7,4 +7,5 @@ class Cabriolet(ps: Int): Auto(ps, 2) {
     fun dachEinAusfahren(){
         dachOffen = !dachOffen
     }
+
 }
