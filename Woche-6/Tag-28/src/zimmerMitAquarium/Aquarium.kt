@@ -2,7 +2,7 @@ package zimmerMitAquarium
 
 import zimmerMitAquarium.fisch.Fisch
 
-class Aquarium(val kapazität: Int) {
+class Aquarium(private val kapazitaet: Int) {
     var wasserSauber: Boolean = true
     var tiere: MutableList<Tier> = mutableListOf()
 
@@ -19,7 +19,6 @@ class Aquarium(val kapazität: Int) {
     }
 
     fun wasserWechseln() {
-        println("$kapazität Liter werden gewechselt")
+        println("$kapazitaet Liter werden gewechselt")
     }
-
 }

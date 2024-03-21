@@ -1,14 +1,23 @@
 package privatePublic
 
 class Konto(
-    val inhaber: String,
+    private val inhaber: String,
     private var kontostand: Double,
     private var PIN: String
 ){
 
     fun getKontostand(){
         println("geben sie ihren PIN ein:")
-        //...
+        if (readln() == PIN) {
+            println("Dein Kontostand ist $kontostand")
+        } else {
+            println("Falscher PIN")
+            getKontostand()
+        }
+    }
+
+    fun getInhaber(): String{
+        return inhaber
     }
 
 

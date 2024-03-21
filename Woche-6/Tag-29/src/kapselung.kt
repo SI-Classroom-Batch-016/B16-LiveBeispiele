@@ -10,7 +10,7 @@ fun main(){
         9999.0,
         "1234"
     )
-    
+    konto1.getKontostand()
     // Kontostand auf private gesetzt -> nicht mehr bearbeitbar
 //    konto1.kontostand = 100000.0
 //    konto1.kontostand += konto2.kontostand
@@ -21,7 +21,8 @@ fun main(){
 //    konto2.PIN = "4321"
 
     // Weiterhin möglich
-    konto2.pinAendern()
+    //konto2.pinAendern()
+
 
 
 }

@@ -18,4 +18,6 @@ fun main() {
     bruce.essen(goldi)
     libi.essen()
     aquarium.tiere.remove(goldi)
+    var text: String = "15"
+
 }
