@@ -9,4 +9,8 @@ open class Person(
         get() {
             return geburtsDatum.zuAlter()
         }
+
+    override fun toString(): String {
+        return "$name, $geburtsDatum"
+    }
 }
