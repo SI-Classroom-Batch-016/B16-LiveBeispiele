@@ -4,6 +4,7 @@ fun main(){
 
     val testSpieler = Spieler("Test")
 
+
     val testFrage = Frage(
         "In Kotlin was bedeutet der Begriff 'Parameter?'",
         Kategorie.Kotlin,

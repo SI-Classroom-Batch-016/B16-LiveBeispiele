@@ -1,7 +1,6 @@
 package Quiz
 
 
-
 const val ANZAHL_RUNDEN = 2
 val alleFragen = mutableListOf<Frage>(
     /*
@@ -86,12 +85,13 @@ fun main(){
 
     repeat(ANZAHL_RUNDEN){
         println("\tRUNDE ${it + 1}:")
-        for (spieler in alleSpieler){
+        for (spieler in alleSpieler.shuffled()){
 
             println()
             val zufallsFrage = alleFragen.random()
             zufallsFrage.frageAnzeigen()
 
+            spieler.jokerEinsetzen(zufallsFrage)
             // TODO: Spieler könnte Joker einsetzen
             zufallsFrage.frageBeantworten(spieler)
 
@@ -116,7 +116,8 @@ fun spielStart(){
     repeat(nrPlayers){
         println()
         println("Spieler ${it +1} geben sie ihren Namen ein:")
-        alleSpieler.add(Spieler(readln()))
+        val name = readln()
+        alleSpieler.add(Spieler(name))
     }
     println("-------")
 }

@@ -9,3 +9,9 @@ val UNDERLINE = "\u001B[4m"
 val RESET = "\u001B[0m"
 val GREEN = "\u001B[32m"
 val RED = "\u001B[31m"
+
+// Platz für nützliche Funktionen
+fun alterEinlesen(): Int{
+    return 0
+}
+
