@@ -1,15 +1,13 @@
 package Quiz
 
-private val alphabet = 'a'..'z'
-
 class Frage(
-    val frageText: String,
+    private val frageText: String,
     val kategorie: Kategorie,
-    val richtigeAntwort: String,
+    private val richtigeAntwort: String,
     antwortMoeglichkeiten: List<String>
 ) {
 
-    val antwortMoeglichkeiten: MutableList<String> = antwortMoeglichkeiten.shuffled().toMutableList()
+    private val antwortMoeglichkeiten: MutableList<String> = antwortMoeglichkeiten.shuffled().toMutableList()
 
     fun frageAnzeigen() {
         println("---------")
